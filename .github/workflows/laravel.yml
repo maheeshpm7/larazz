@@ -16,7 +16,7 @@ jobs:
       with:
         php-version: '8.0'
     - name: Install nodejs
-      run: apt -y install nodejs
+      run: sudo apt -y install nodejs
     - uses: actions/checkout@v3
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
